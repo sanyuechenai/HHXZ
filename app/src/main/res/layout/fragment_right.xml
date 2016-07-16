@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.vincent.hhxz.fragment.RightFragment">
+
+    <ImageView
+        android:src="@mipmap/refresh_loading2"
+        android:id="@+id/loadingdata_rightfragment"
+        android:layout_centerInParent="true"
+        android:layout_width="50dp"
+        android:scaleType="centerCrop"
+        android:layout_height="50dp" />
+
+    <GridView
+        android:scrollbars="none"
+        android:visibility="invisible"
+        android:id="@+id/gridview_rightfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:verticalSpacing="5dp"
+        >
+
+    </GridView>
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vincent.hhxz.activity.GoodsRecommandActivity">
+        <WebView
+            android:visibility="invisible"
+            android:id="@+id/webView_goodsrecommand"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+    <LinearLayout
+        android:id="@+id/titlebar_recommand"
+        android:paddingBottom="12dp"
+        android:background="@color/colorWhite"
+        android:paddingTop="12dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="?android:attr/actionBarSize">
+        <ImageButton
+            android:onClick="click"
+            android:background="@color/colorWhite"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/abc_ic_ab_back_holo_light"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="商品百科"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/name_goodsshare"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:onClick="click"
+            android:background="@color/colorWhite"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/abc_ic_clear_search_api_disabled_holo_light"
+            android:layout_alignParentRight="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/titlebar_recommand"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/loadingdata_gra"
+            android:layout_centerInParent="true"
+            android:background="@drawable/frame"
+            android:layout_width="50dp"
+            android:scaleType="centerCrop"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+
+
+       <ImageView
+           android:id="@+id/addcar"
+           android:layout_below="@id/titlebar_recommand"
+           android:layout_marginTop="20dp"
+           android:layout_marginRight="15dp"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

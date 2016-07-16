@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vincent.hhxz.activity.SearchActivity">
+    <LinearLayout
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:background="@color/colorGreen"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+        <ImageButton
+            android:id="@+id/backbtn_SA"
+            android:background="@color/colorGreen"
+            android:onClick="btnClickSearch"
+            android:layout_margin="5dp"
+            android:src="@mipmap/detail_back_on"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_shape"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@mipmap/searcch_glass"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"/>
+            <EditText
+                android:id="@+id/et_SA"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="买优质农品 上禾禾小镇"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/clear_SA"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:src="@mipmap/clear"
+                android:layout_gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/search_SA"
+            android:layout_marginRight="10dp"
+            android:text="搜索"
+            android:background="@color/colorGreen"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorWhite"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:layout_margin="10dp"
+        android:text="热门搜索"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/hotkeyviewlayout_sa"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/search0"
+            android:gravity="center"
+            android:background="@drawable/textword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/search1"
+            android:gravity="center"
+            android:background="@drawable/textword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/search2"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/textword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/search3"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/textword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/search4"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/textword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/search5"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/textword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/search6"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/textword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/search7"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/textword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/search8"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/textword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/search9"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/textword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/search10"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/textword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/search11"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/textword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+      </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/oldsearch_layout_SA"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="历史搜索"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/delete_btn_SA"
+                android:text="清空历史记录"
+                android:background="@drawable/clearsearchbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <ListView
+            android:id="@+id/oldsearch_item_listview"
+            android:divider="@color/colorGray"
+            android:dividerHeight="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

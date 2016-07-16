@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RadioGroup
+        android:id="@+id/priceradiogroup"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/addgoods"
+            android:layout_marginTop="5dp"
+            android:text="全部商品"
+            android:checked="true"
+            android:padding="10dp"
+            android:background="@drawable/pricechoosed"
+            android:button="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view1"
+            android:background="@color/colorGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RadioButton
+            android:id="@+id/low50pricegoods"
+            android:text="0~50元"
+            android:padding="10dp"
+            android:background="@drawable/pricechoosed"
+            android:button="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/view2"
+            android:background="@color/colorGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RadioButton
+            android:id="@+id/low100pricegoods"
+            android:text="50~100元"
+            android:padding="10dp"
+            android:background="@drawable/pricechoosed"
+            android:button="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/view3"
+            android:background="@color/colorGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RadioButton
+            android:id="@+id/low200pricegoods"
+            android:text="100~200元"
+            android:background="@drawable/pricechoosed"
+            android:button="@null"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/view4"
+            android:background="@color/colorGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RadioButton
+            android:id="@+id/up200pricegoods"
+            android:text="200元以上"
+            android:background="@drawable/pricechoosed"
+            android:button="@null"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/view5"
+            android:background="@color/colorGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <RadioButton
+            android:id="@+id/baoyougoods"
+            android:text="只看包邮"
+            android:background="@drawable/pricechoosed"
+            android:button="@null"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RadioGroup>
+
+</LinearLayout>

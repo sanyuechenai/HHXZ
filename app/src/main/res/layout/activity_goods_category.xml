@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vincent.hhxz.activity.GoodsCategoryActivity">
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="@color/colorGreen"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+
+        <ImageButton
+            android:background="@color/colorGreen"
+            android:layout_gravity="center_vertical"
+            android:onClick="backClick"
+            android:src="@mipmap/detail_back_on"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="爱淘宝"
+            android:id="@+id/titleName"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/pricefilter_goodscategory"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorGreen"
+            android:src="@mipmap/search_price_filter_off"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/colorLightWhite"
+        android:id="@+id/reflashlayout_goodscategory"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/reflashing_goodscategory"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/refresh_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <ImageView
+            android:id="@+id/searching_goodscategory"
+            android:layout_centerInParent="true"
+            android:background="@drawable/frame"
+            android:layout_width="50dp"
+            android:scaleType="centerCrop"
+            android:layout_height="50dp" />
+
+    <GridView
+        android:visibility="invisible"
+        android:layout_below="@id/reflashlayout_goodscategory"
+        android:layout_marginTop="10dp"
+        android:id="@+id/goodsdetialgridview_goodscategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:horizontalSpacing="4dp"
+        android:scrollbars="none"
+        >
+    </GridView>
+
+    </RelativeLayout>
+
+</LinearLayout>

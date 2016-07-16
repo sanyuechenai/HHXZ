@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.vincent.hhxz.fragment.LeibieFragment">
+
+    <fragment
+        android:id="@+id/leftfratment_leibie"
+        android:name="com.vincent.hhxz.fragment.LeftFragment"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+    <fragment
+        android:id="@+id/rightfratment_leibie"
+        android:name="com.vincent.hhxz.fragment.RightFragment"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
